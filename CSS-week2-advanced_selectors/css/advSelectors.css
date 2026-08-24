@@ -1,15 +1,80 @@
-nav a{
+/* 1. Link Skip to Content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* 2. Thẻ nav dạng khối nội tuyến */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #2c3e50;
+  padding: 10px;
+}
+
+nav a {
   text-align: center;
-  color:#FFFFFF;
-  background: #0000FF;
+  color: #ffffff;
+  background: #2c3e50;
   display: inline-block;
   width: 20%;
   margin-right: 2%;
+  text-decoration: none;
 }
 
-.current{
+/* 3. Lớp current */
+.current {
   color: #000000;
-  background: #0FFF00;
+  background: #0fff00;
   text-transform: uppercase;
 }
 
+/* 4. Hình ảnh trong nav */
+nav img {
+  width: 10%;
+}
+
+/* 5. Thiết lập Lớp Lưới (Grid Class) */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid > div, .grid > section, .grid > article {
+  width: 40%;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* 6. Thiết lập Lớp Flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 7. Định dạng chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  width: 120px;
+}
